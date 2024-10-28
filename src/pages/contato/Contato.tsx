@@ -1,44 +1,45 @@
+import { SVGProps } from "react"
+import { JSX } from "react/jsx-runtime"
 
 function Contato() {
     return (
         <>
-            <div className="space-y-4 px-4 pt-5 flex-row justify-around items-center">
+            <div className="space-y-4 px-4 pt-5 flex-row justify-around items-center text-daniAzul">
                 <div className="">
-                <div className="grid gap-2">
-                    <h3 className="text-xl font-bold font-sans">Informações: </h3>
-                    <div className="flex items-center gap-2">
-                        <LocateIcon className="h-5 w-5 text-muted-foreground" />
-                        <p className='font-sans'>
-                            Rua Augusto de Vasconcelos, 544 - Loja 130 - Campo Grande, Rio de Janeiro - RJ - CEP 23050-340</p>
+                    <div className="grid gap-2">
+                        <h3 className="text-xl font-bold font-sans">Informações: </h3>
+                        <div className="flex items-center gap-2">
+                            <LocateIcon className="h-5 w-5 text-muted-foreground text-daniVermelho" />
+                            <p className='font-sans'>
+                                Rua Augusto de Vasconcelos, 544 - Loja 130 - Campo Grande, Rio de Janeiro - RJ - CEP 23050-340</p>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <PhoneIcon className="h-5 w-5 text-muted-foreground" />
+                            <p className="text-muted-foreground"> +55 (21) 98940-9557</p>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <MailIcon className="h-5 w-5 text-muted-foreground" />
+                            <p className="text-muted-foreground">daniellelins@gmail.com</p>
+                        </div>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <PhoneIcon className="h-5 w-5 text-muted-foreground" />
-                        <p className="text-muted-foreground"> +55 (21) 98940-9557</p>
+                    <div className="grid gap-2">
+                        <h3 className="text-xl font-bold font-sans pt-3">Horário de Funcionamento</h3>
+                        <div className="flex items-center gap-2 pb-2">
+                            <ClockIcon className="w-5 h-5 text-muted-foreground" />
+                            <p className='font-sans'>
+                                Segunda a Sexta: 9h às 18h
+                            </p>
+                        </div>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <MailIcon className="h-5 w-5 text-muted-foreground" />
-                        <p className="text-muted-foreground">daniellelins@gmail.com</p>
-                    </div>
-                </div>
-                <div className="grid gap-2">
-                    <h3 className="text-xl font-bold font-sans pt-3">Horário de Funcionamento</h3>
-                    <div className="flex items-center gap-2 pb-2">
-                        <ClockIcon className="w-5 h-5 text-muted-foreground" />
-                        <p className='font-sans'>
-                            Segunda a Sexta: 9h às 18h
-                        </p>
-                    </div>
-                </div>
                 </div>
                 <div className="aspect-video rounded-lg overflow-hidden pt-2">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1838563727033!2d-43.56541682468959!3d-22.906588479255173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be3fdf4a56525%3A0x3a156ac4ccbe8186!2sPATIO%20CAMPO%20GRANDE!5e0!3m2!1spt-BR!2sbr!4v1730077198626!5m2!1spt-BR!2sbr" width="500" height="300" loading="lazy"></iframe>
                 </div>
             </div>
-
         </>)
 }
 
-function PhoneIcon(props) {
+function PhoneIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
@@ -57,7 +58,7 @@ function PhoneIcon(props) {
     )
 }
 
-function MailIcon(props) {
+function MailIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
@@ -77,7 +78,7 @@ function MailIcon(props) {
     )
 }
 
-function LocateIcon(props) {
+function LocateIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
@@ -100,7 +101,7 @@ function LocateIcon(props) {
     )
 }
 
-function ClockIcon(props) {
+function ClockIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
