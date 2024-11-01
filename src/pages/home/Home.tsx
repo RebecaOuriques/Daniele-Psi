@@ -3,6 +3,8 @@ import dani2 from '../../assets/dani2.png'
 import Sobre from '../sobre/Sobre'
 import WhatsAppButton from '../../components/whatsapp/Whatsapp'
 import Contato from '../contato/Contato';
+import Servico from '../servico/Servico';
+import Perguntas from '../perguntas/perguntas';
 
 function Home() {
 
@@ -14,7 +16,7 @@ function Home() {
     return (
 
         <>
-            <section className="w-full flex py-12 md:py-12 lg:py-16 xl:py-20 px-2 mx-0 justify-center bg-gradient-to-r text-daniAzul from-blue-100 via-purple-50 to-pink-100">
+            <section className="w-full flex py-12 md:py-12 lg:py-16 xl:py-20 px-2 mx-0 justify-center bg-gradient-to-r text-daniAzul">
                 <div className="container flex px-2 md:px-6">
                     <div className="flex flex-col justify-center items-center space-y-4 text-center ">
                         <div className="space-y-2 flex-row ">
@@ -39,12 +41,12 @@ function Home() {
                                 rel="noopener noreferrer"
                                 className="bg-daniRose border-3 rounded-lg p-2 hover:bg-daniVermelho "
                             >
-                                Agende uma consulta
+                                Agende sua consulta
                             </a>
                             </div>
-                            <div className='hover:scale-105 transition-transform duration-300'>
-                            <button className="bg-daniRose border-3 rounded-lg p-2 hover:bg-daniVermelho">Saiba +</button>
-                            </div>
+                             {/* // <div className='hover:scale-105 transition-transform duration-300'>
+                              <button className="bg-daniRose border-3 rounded-lg p-2 hover:bg-daniVermelho">Saiba +</button>
+                             </div> */}
                           </div>
                     </div>
 
@@ -54,8 +56,10 @@ function Home() {
                 </div>
 
             </section>
+            <Servico />
             <Sobre />
             <Contato />
+            <Perguntas />
         </>
     )
 }

@@ -5,13 +5,13 @@ function Sobre() {
 
         <>
 
-            <div className="justify-around py-3 bg-gradient-to-r from-blue-100 via-purple-50 to-pink-100 text-daniAzul">
+            <div className="justify-around py-3 bg-daniAzul text-white">
                 <div className="px-3 justify-around">
 
                     <h2 className='font-semibold text-2xl'>Sobre mim</h2>
                     <p className="text-justify text-evenly pt-2">
                         <p>Sou Danielle Lins Psicóloga, Terapeuta Cognitiva Comportamental e Sexual (CRP 05/62079).
-                            Formada pela Universidade Estácio de Sá (2019) e pós graduada pela XXXX (XXXX). Com uma abordagem especializada em Terapia Cognitiva Comportamental (TCC) e Terapia Sexual, estou aqui para ajudá-lo a explorar e superar desafios emocionais e relacionais.
+                            Formada pela Universidade Estácio de Sá (2019) e pós graduada pela Celso Lisboa (2022). Com uma abordagem especializada em Terapia Cognitiva Comportamental (TCC) e Terapia Sexual, estou aqui para ajudá-lo a explorar e superar desafios emocionais e relacionais.
                         </p>
                         <p className="font-semibold pt-4">❤️‍🔥 Sexualidade e Relacionamento</p>
                         A sexualidade e o relacionamento são aspectos fundamentais da vida humana. Ofereço um espaço seguro e respeitoso para discutir suas preocupações, dúvidas e inseguranças. Trabalhando tanto com atendimentos individuais quanto em casal, meu objetivo é promover a compreensão mútua e o fortalecimento das relações.

@@ -6,6 +6,7 @@ import Home from './pages/home/Home'
 import Contato from './pages/contato/Contato'
 import './index.css';
 import Footer from './components/footer/Footer'
+import Servico from './pages/servico/Servico'
 
 function App() {
 
@@ -14,12 +15,14 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-        <div className="min-h-[80vh] bg-gradient-to-r from-blue-100 via-purple-50 to-pink-100">
+        <div className="min-h-[80vh] ">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/contato" element={<Contato />} />
+            <Route path="/servico" element={<Servico />} />
+
           </Routes>
         </div>
         <Footer />

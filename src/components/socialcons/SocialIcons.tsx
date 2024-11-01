@@ -15,7 +15,7 @@ const SocialIcon: React.FC<SocialIconProps> = ({ href, ariaLabel, children }) =>
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="p-2 rounded-full bg-gray-100 text-daniAzul hover:bg-gray-200 transition-colors duration-300"
+      className="p-2 rounded-full bg-daniAzul text-daniVermelho hover:bg-gray-200 transition-colors duration-300"
       aria-label={ariaLabel}
     >
       {children}
