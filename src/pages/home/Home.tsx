@@ -4,7 +4,8 @@ import Sobre from '../sobre/Sobre'
 import WhatsAppButton from '../../components/whatsapp/Whatsapp'
 import Contato from '../contato/Contato';
 import Servico from '../servico/Servico';
-import Perguntas from '../perguntas/perguntas';
+import Perguntas from '../perguntas/Perguntas';
+import Depoimentos from '../depoimentos/Depoimentos';
 
 function Home() {
 
@@ -58,8 +59,9 @@ function Home() {
             </section>
             <Servico />
             <Sobre />
-            <Contato />
+            <Depoimentos />
             <Perguntas />
+            <Contato />
         </>
     )
 }

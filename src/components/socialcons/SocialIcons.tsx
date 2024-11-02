@@ -41,7 +41,6 @@ export default function SocialIcons() {
         </svg>
       </SocialIcon>
       <SocialIcon href="https://www.instagram.com/psi.daniellelins/" ariaLabel="Me siga no Instagram">
-        {/* SVG do Instagram */}
         <svg
           viewBox="0 0 24 24"
           width="24"
